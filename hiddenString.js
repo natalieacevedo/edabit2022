@@ -1,32 +1,32 @@
-PARTIALLY HIDDEN STRING
-Create a function that takes a phrase and transforms each word using the following rules:
+// PARTIALLY HIDDEN STRING
+// Create a function that takes a phrase and transforms each word using the following rules:
 
-* Keep first and last character the same.
-* Transform middle characters into a dash
+// * Keep first and last character the same.
+// * Transform middle characters into a dash
 
-FIRST SOLUTION:
+// FIRST SOLUTION:
 
-function hiddenString(phrase) {
-  const arr = phrase.split(" ");
-  let finalString = "";
+// function hiddenString(phrase) {
+//   const arr = phrase.split(" ");
+//   let finalString = "";
 
-  for (let i = 0; i < arr.length; i++) {
-    for (let j = 0; j < arr[i].length; j++) {
-      if (arr[i] <= 2) {
-        finalString += arr[i];
-      } else {
-        if (j === 0) {
-          finalString += arr[i][j];
-        } else if (j === arr[i].length - 1) {
-          finalString += arr[i][j] + " ";
-        } else {
-          finalString += "-";
-        }
-      }
-    }
-  }
-  return finalString;
-}
+//   for (let i = 0; i < arr.length; i++) {
+//     for (let j = 0; j < arr[i].length; j++) {
+//       if (arr[i] <= 2) {
+//         finalString += arr[i];
+//       } else {
+//         if (j === 0) {
+//           finalString += arr[i][j];
+//         } else if (j === arr[i].length - 1) {
+//           finalString += arr[i][j] + " ";
+//         } else {
+//           finalString += "-";
+//         }
+//       }
+//     }
+//   }
+//   return finalString;
+// }
 
 //SECOND SOLUTION:
 
